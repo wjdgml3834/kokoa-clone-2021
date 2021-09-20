@@ -119,3 +119,7 @@
 .friends-screen__box:hover {
   animation: boxAnimation 0.5s ease-in-out forwards;
 }
+
+.recommend {
+  height: 142vh;
+}
