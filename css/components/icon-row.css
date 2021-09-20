@@ -1,0 +1,30 @@
+.icon-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+@keyframes iconAnimation {
+  from {
+    transform: none;
+  }
+
+  to {
+    transform: scale(1.4);
+  }
+}
+
+.icon-row__icon:hover {
+  animation: iconAnimation 0.3s ease-in-out forwards;
+}
+.icon-row__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50px;
+  color: var(--font-color);
+}
+
+.icon-row__icon span {
+  margin-top: 18px;
+}

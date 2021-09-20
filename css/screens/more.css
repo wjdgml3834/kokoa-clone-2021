@@ -1,0 +1,68 @@
+.more-screen .icon-row {
+  margin-top: 40px;
+}
+
+.more-suggestions {
+  margin-top: 50px;
+  border-top: var(--main-border);
+  padding-top: 40px;
+}
+
+.more-suggestions__title {
+  margin-bottom: 30px;
+}
+
+.more-suggestions__icons {
+  display: flex;
+  margin-left: 10px;
+}
+
+@keyframes suggetAnimation {
+  from {
+    transform: none;
+  }
+  to {
+    transform: scale(1.3);
+  }
+}
+
+.more-suggestions__icon:hover {
+  animation: suggetAnimation 0.3s ease-in-out forwards;
+}
+
+.more-suggestions__icon {
+  margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.more-suggestions__icon__image {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.more-suggestions__icon__image i {
+  color: var(--font-color);
+  font-size: 40px;
+}
+
+.more-suggestions__icon span {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.appstore {
+  background-color: #1a92ee;
+}
+
+.google {
+  background-color: #039c5b;
+}
+.youtube {
+  background-color: #dc2425;
+}

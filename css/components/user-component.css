@@ -1,0 +1,70 @@
+.user-component {
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.user-component,
+.user-component__column:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.user-component__avatar {
+  border-radius: 20px;
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+}
+
+.user-component__title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.user-component__subtitle {
+  font-size: 17px;
+  margin-top: 8px;
+  color: var(--font-color);
+}
+
+.user-component__avatar--xl {
+  width: 80px;
+  height: 80px;
+}
+.user-component__avatar--sm {
+  width: 200px;
+  height: 100px;
+  border-radius: 10px;
+}
+.user-component__column:last-child {
+  color: var(--font-color);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.user-component__subtitle {
+  font-size: 15px;
+}
+
+.user-component__subtitle {
+  color: gray;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+@keyframes userAnimation {
+  from {
+    transform: none;
+    border: none;
+  }
+  to {
+    transform: scale(1.1);
+    border: 2px solid var(--font-color);
+    box-shadow: 1px 1px 10px 1px var(--font-color);
+  }
+}
+
+.user-component:hover {
+  animation: userAnimation 0.5s ease-in-out forwards;
+}

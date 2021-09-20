@@ -1,0 +1,127 @@
+.find-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.find-icons__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.find-icons__icon span {
+  margin-top: 18px;
+}
+
+.recommended-friends {
+  border-top: var(--main-border);
+  border-bottom: var(--main-border);
+  margin: 40px 0px;
+}
+
+.recommended-friends__title {
+  font-size: 14px;
+  color: var(--font-color);
+  margin-top: 20px;
+}
+
+.recommended-friends span {
+  font-size: 18px;
+  color: var(--font-color);
+  margin: 30px 0px;
+  display: flex;
+  justify-content: center;
+  padding: 60px 0px 70px 0px;
+}
+
+.open-chat__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.open-chat__header h4 {
+  color: var(--font-color);
+}
+
+.open-chat__header span {
+  color: var(--font-color);
+}
+.open-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: var(--main-border);
+}
+
+.open-post__members {
+  font-size: 13px;
+  color: var(--font-color);
+  margin-bottom: 5px;
+}
+
+.open-post__members img {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+.open-post__hashtags {
+  font-size: 10px;
+  color: var(--font-color);
+  margin: 3px 0px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.open-post__members-status {
+  color: #ff7acc;
+}
+.open-post__photo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 20%;
+}
+
+.open-post__photo {
+  margin-bottom: 10px;
+  position: relative;
+}
+.open-post__hearts {
+  padding: 2px;
+  position: absolute;
+  font-size: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border-radius: 20%;
+  bottom: 6px;
+  right: 6px;
+}
+
+.open-post__hearts span {
+  margin-left: 3px;
+}
+
+@keyframes heartAnimation {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: #ff99cb;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+
+.open-post__photo:hover i {
+  will-change: transform;
+  animation: heartAnimation 0.5s ease-in-out infinite;
+}
+
+.open-post:last-child {
+  border: none;
+  margin-top: 30px;
+}

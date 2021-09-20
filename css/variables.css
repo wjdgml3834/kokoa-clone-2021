@@ -1,0 +1,9 @@
+:root {
+  --yellow: #e50a13;
+  --horizontal-space: 25px;
+  --main-border: 1px solid #e1e1e1;
+  --script: rgba(0, 0, 0, 0.5);
+  --background-color: #221f20;
+  --font-color: #e1e1e1;
+  --font: "Bebas Neue", cursive;
+}

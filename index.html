@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to KaKaoTalk</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <i class="fas fa-signal"></i>
+        <span>SKT</span>
+        <!--wifi icon-->
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>75%</span>
+        <!--할일: 배터리 아이콘-->
+        <i class="fas fa-battery-three-quarters"></i>
+        <!--할일: 번개모양 아이콘-->
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">jungflix</h1>
+      <p class="welcome-header__text">If you have a jungflix Account,</p>
+      <p class="welcome-header__text">
+        log in with your email or phone number.
+      </p>
+    </header>
+    <form action="friends.html" method="get" id="login-form">
+      <input required type="text" placeholder="Email or Phone Number" />
+      <input required type="password" minlength="8" placeholder="Password" />
+      <input type="submit" value="Log In" />
+      <input type="submit" value="Create New Account" />
+      <a href="#">Forgot Password?</a>
+    </form>
+
+    <div id="no-mobile">
+      <span>Your Screen Size is Too Big</span>
+    </div>
+
+    <script src="app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
